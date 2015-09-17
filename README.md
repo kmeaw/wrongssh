@@ -10,5 +10,9 @@ https://jpetazzo.github.io/2014/06/23/docker-ssh-considered-evil/
 - run the server;
 - ssh -p 2200 root@docker-container@server
 
+You can authenticate with a password (/etc/shadow) or a public key
+(/etc/passwd + $HOME/.ssh/authorized_keys).
+
 ## TODO:
 - [ ] Support logging in as a non-root user
+- [ ] Support iptables' REDIRECT target to mimic a running sshd on port 22
